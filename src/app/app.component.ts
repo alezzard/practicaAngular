@@ -23,12 +23,16 @@ export class AppComponent{
   
   mostrar: boolean = true;
 
+  alternarLista(){
+    this.mostrar = !this.mostrar;
+ }
+/* 
   ocultarLista() {
     return (this.mostrar = false);
   }
   mostrarLista() {
     return (this.mostrar = true);
-  }
+  } */
 
  
 }

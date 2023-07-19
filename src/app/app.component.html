@@ -1,6 +1,7 @@
 <section>
-  <button mat-stroked-button color="primary" *ngIf="mostrar == false" (click)="mostrarLista()">Mostrar</button>
-  <button mat-stroked-button color="warn" *ngIf="mostrar == true" (click)="ocultarLista()">Ocultar</button>
+<!--   <button mat-stroked-button color="primary" *ngIf="mostrar == false" (click)="mostrarLista()">Mostrar</button>
+  <button mat-stroked-button color="warn" *ngIf="mostrar == true" (click)="ocultarLista()">Ocultar</button> -->
+  <button mat-raised-button color="accent" (click)="alternarLista()">{{mostrar ? 'Ocultar' : 'Mostrar'}}</button>
   <br>
 <table *ngIf="mostrar">
   <tr>

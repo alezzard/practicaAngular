@@ -1,3 +1,7 @@
+<section>
+  <button mat-stroked-button color="primary" *ngIf="mostrar == false" (click)="mostrarLista()">Mostrar</button>
+  <button mat-stroked-button color="warn" *ngIf="mostrar == true" (click)="ocultarLista()">Ocultar</button>
+  <br>
 <table *ngIf="mostrar">
   <tr>
     <td>Nombre del Producto |</td>
@@ -8,7 +12,4 @@
     <td>{{producto.precio}}</td>
   </tr>
 </table>
-<br>
-<button *ngIf="mostrar == false" (click)="mostrarLista()">Mostrar</button>
-
-<button *ngIf="mostrar == true" (click)="ocultarLista()">Ocultar</button>
+</section>

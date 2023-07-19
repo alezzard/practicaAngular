@@ -23,9 +23,6 @@ export class AppComponent{
   
   mostrar: boolean = true;
 
-  get verEstado(){
-    return this.mostrar
-  }
   ocultarLista() {
     return (this.mostrar = false);
   }
